@@ -1,0 +1,16 @@
+{
+  "name": "mini-curso-cordova-server",
+  "version": "1.0.0",
+  "description": "Servidor utilizado no Mini Curso",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Jonnas Fonini",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.8.5",
+    "body-parser": "~1.6.5"
+  }
+}

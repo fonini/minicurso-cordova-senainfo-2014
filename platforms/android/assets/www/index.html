@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Consultas 2014</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.theme-1.4.3.min.css" />
+    </head>
+    <body>
+
+       <!-- Listagem de consultas -->
+		<div data-role="page" id="lista-consultas">
+
+			<div data-role="header">
+				<h1>Consultas Agendadas</h1>
+				<a href="#cadastro-consultas" data-icon="plus" data-theme="b" class="ui-btn-right">Nova consulta</a>
+			</div>
+
+			<div role="main" class="ui-content">
+				<ul id="listview-consultas" data-role="listview"></ul>
+			</div>
+
+			<div data-role="footer">
+				<h4>Senainfo 2014</h4>
+			</div>
+		</div><!-- /lista-consultas -->
+
+
+		<!-- Cadastro de consultas -->
+		<div data-role="page" id="cadastro-consultas">
+
+			<div data-role="header">
+				<a href="#" data-icon="back" data-rel="back">Voltar</a>
+				<h1>Cadastro de Consulta</h1>
+				<a id="btn-salvar" data-icon="check" data-theme="b">Salvar</a>
+			</div>
+
+			<div role="main" class="ui-content">
+				<form id="form-cadastro">
+					<label for="medico">Médico</label>
+					<select id="medico" name="medico"></select>
+
+					<label for="paciente">Paciente</label>
+					<input type="text" id="paciente" name="paciente" />
+
+					<label for="data">Data</label>
+					<input data-role="date" type="text" id="data" name="data" />
+				</form>
+				
+			</div>
+
+			<div data-role="footer">
+				<h4>Senainfo 2014</h4>
+			</div>
+		</div><!-- /cadastro-consultas -->
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.mobile-1.4.3.min.js"></script>
+		<script src="js/script.js"></script>
+    </body>
+</html>

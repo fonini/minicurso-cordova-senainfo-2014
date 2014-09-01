@@ -36,11 +36,13 @@
 			<div data-role="header">
 				<a href="#" data-icon="back" data-rel="back">Voltar</a>
 				<h1>Cadastro de Consulta</h1>
-				<a id="btn-salvar" data-icon="check" data-theme="b">Salvar</a>
+				<a id="btn-salvar" data-icon="check" data-theme="b" data-action="save">Salvar</a>
 			</div>
 
 			<div role="main" class="ui-content">
 				<form id="form-cadastro">
+					<input type="hidden" id="id" />
+
 					<label for="medico">Médico</label>
 					<select id="medico" name="medico"></select>
 
